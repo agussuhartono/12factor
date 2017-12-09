@@ -9,7 +9,7 @@ Sebuah *codebase* merupakan repo tunggal (di dalam sistem kontrol revisi terpusa
 
 Selalu ada korelasi satu-ke-satu antara basis kode (codebase) dan aplikasi:
 
-* Jika ada beberapa codebases, bukan sebuah app -- ia sistem terdistribusi. Setiap komponen dalam sistem terdistribusi adalah aplikasi, dan masing-masing dapat secara individual mematuhi dua belas faktor (twelve-factor).
+* Jika ada beberapa codebases, ia bukan merupakan sebuah app -- ia adalah sistem terdistribusi. Setiap komponen dalam sistem terdistribusi adalah aplikasi, dan masing-masing dapat secara individual mematuhi dua belas faktor (*twelve-factor*).
 * Beberapa aplikasi yang berbagi kode yang sama adalah pelanggaran terhadap dua belas faktor (twelve-factor).  Solusinya disini adalah berbagi kode bersama ke dalam perpustakaan yang bisa disertakan melalui [pengelola ketergantungan (dependency manager)](./dependencies).
 
 Hanya ada satu basis kode (codebase) per aplikasi, tapi akan ada banyak penyebaran aplikasi.  Sebuah pengerahan (*deploy*) adalah menjalankan instan dari aplikasi.  Ini biasanya merupakan situs produksi, dan satu atau beberapa situs pementasan.  Selain itu, setiap pengembang memiliki salinan aplikasi yang berjalan di lingkungan pengembangan lokal mereka, masing-masing yang juga memenuhi syarat sebagai pengerahan (_deploy_).
